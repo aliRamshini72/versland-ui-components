@@ -1,0 +1,384 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .btn-accent {
+    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-accent text-primary fill-primary border border-solid border-accent rounded shadow-md transition-all  hover:bg-transparent   hover:text-accent hover:border-accent hover:border-solid hover:border hover:fill-accent  focus:outline-none  focus:ring-2 focus:ring-accent focus:ring-opacity-75;
+  }
+
+  .btn-sell {
+    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-red text-white fill-white border border-solid border-red rounded shadow-md transition-all  hover:bg-transparent   hover:text-red hover:border-red hover:border-solid hover:border hover:fill-red  focus:outline-none  focus:ring-2 focus:ring-red focus:ring-opacity-75;
+  }
+
+  .btn-buy {
+    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-green text-white fill-white border border-solid border-green rounded shadow-md transition-all  hover:bg-transparent   hover:text-green hover:border-green hover:border-solid hover:border hover:fill-green  focus:outline-none  focus:ring-2 focus:ring-green focus:ring-opacity-75;
+  }
+
+  .btn-slate {
+    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-slate-300 text-black fill-black border border-solid border-slate-300 rounded shadow-md transition-all  hover:bg-transparent   hover:text-black hover:border-slate-300 hover:border-solid hover:border hover:fill-black  focus:outline-none  focus:ring-2 focus:ring-slate-300 focus:ring-opacity-75;
+  }
+
+  .btn-circle {
+    @apply rounded-full w-8 h-8 text-center inline-flex items-center justify-center transition-all shadow-md
+  }
+
+  .btn-accent-icon {
+    @apply ml-2 w-4 h-4
+  }
+
+  .btn-link {
+
+  }
+
+  .col-0 {
+    @apply basis-0/24 hidden
+  }
+
+  .col-1 {
+    @apply basis-1/24 block
+  }
+
+  .col-2 {
+    @apply basis-2/24 block
+  }
+
+  .col-3 {
+    @apply basis-3/24 block
+  }
+
+  .col-4 {
+    @apply basis-4/24 block
+  }
+
+  .col-5 {
+    @apply basis-5/24 block
+  }
+
+  .col-6 {
+    @apply basis-6/24 block
+  }
+
+  .col-7 {
+    @apply basis-7/24 block
+  }
+
+  .col-8 {
+    @apply basis-8/24 block
+  }
+
+  .col-9 {
+    @apply basis-9/24 block
+  }
+
+  .col-10 {
+    @apply basis-10/24 block
+  }
+
+  .col-11 {
+    @apply basis-11/24 block
+  }
+
+  .col-12 {
+    @apply basis-12/24 block
+  }
+
+  .col-13 {
+    @apply basis-13/24 block
+  }
+
+  .col-14 {
+    @apply basis-14/24 block
+  }
+
+  .col-15 {
+    @apply basis-15/24 block
+  }
+
+  .col-16 {
+    @apply basis-16/24 block
+  }
+
+  .col-17 {
+    @apply basis-17/24 block
+  }
+
+  .col-18 {
+    @apply basis-18/24 block
+  }
+
+  .col-19 {
+    @apply basis-19/24 block
+  }
+
+  .col-20 {
+    @apply basis-20/24 block
+  }
+
+  .col-21 {
+    @apply basis-21/24 block
+  }
+
+  .col-22 {
+    @apply basis-22/24 block
+  }
+
+  .col-23 {
+    @apply basis-23/24 block
+  }
+
+  .col-24 {
+    @apply basis-24/24 block
+  }
+
+}
+.bg-backdrop {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+}
+.pagination-container .pagination-item {
+  padding: 0 12px;
+  height: 32px;
+  text-align: center;
+  margin: auto 4px;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  letter-spacing: 0.01071em;
+  border-radius: 16px;
+  line-height: 1.43;
+  font-size: 13px;
+  min-width: 32px;
+}
+.pagination-container .pagination-item.dots:hover {
+  background-color: transparent;
+  cursor: default;
+}
+.pagination-container .pagination-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.pagination-container .pagination-item.selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.pagination-container .pagination-item .arrow::before {
+  position: relative;
+  /* top: 3pt;
+   Uncomment this to lower the icons as requested in comments*/
+  content: '';
+  /* By using an em scale, the arrows will size with the font */
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+}
+.pagination-container .pagination-item .arrow.left {
+  transform: rotate(-135deg) translate(-50%);
+}
+.pagination-container .pagination-item .arrow.right {
+  transform: rotate(45deg);
+}
+.pagination-container .pagination-item.disabled {
+  pointer-events: none;
+}
+.pagination-container .pagination-item.disabled .arrow::before {
+  border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+}
+.pagination-container .pagination-item.disabled:hover {
+  background-color: transparent;
+  cursor: default;
+}
+.tooltip {
+  width: fit-content;
+  position: relative;
+}
+.tooltip .hint-right {
+  display: none;
+}
+.tooltip .content {
+  width: fit-content;
+}
+.tooltip .content:hover .hint-right {
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin: auto 0;
+  width: fit-content;
+  max-width: 140px;
+}
+button svg {
+  vertical-align: sub;
+}
+
+@keyframes loading-rotate {
+  0% {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  25% {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+  50% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  75% {
+    -moz-transform: rotateX(-360deg);
+    -ms-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+
+.radio .radio-outer-circle {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  border: 1px solid #001222;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  transition: all 0.1s linear;
+  background-color: white;
+}
+.radio .radio-inner-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fbc801;
+  transition: all 0.1s linear;
+}
+.radio .unselected {
+  border: 1px solid #576f83;
+}
+.radio .unselected-circle {
+  width: 0;
+  height: 0;
+}
+
+.component-message-wrap {
+  width: auto;
+  max-width: 85%;
+  display: inline-block;
+  position: fixed;
+  z-index: 60;
+  left: 50%;
+  top: -20px;
+  border-radius: 4px;
+  padding: 8px 32px;
+  background-color: #fff;
+  color: #000;
+  pointer-events: all;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+  transform: translateX(-50%);
+  animation-name: message;
+}
+.component-message-wrap * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes message {
+  0% {
+    top: -20px;
+    opacity: 1;
+  }
+  10% {
+    top: 40px;
+    opacity: 1;
+  }
+  80% {
+    top: 40px;
+    opacity: 1;
+  }
+  100% {
+    top: -20px;
+    opacity: 0;
+  }
+}
+.component-message-wrap .message-content {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.component-message-wrap .message-content i {
+  font-size: 14px;
+  display: block;
+  line-height: 1.1;
+  margin-right: 8px;
+}
+.component-message-wrap .message-content p {
+  flex: 1;
+  word-break: normal;
+  line-height: 1.1;
+}
+
+
+@keyframes backdrop-fade {
+  from {
+    background: transparent;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.app-back-drop-open {
+  animation: backdrop-fade 300ms ease forwards;
+}
+
+.app-back-drop-close {
+  animation: backdrop-fade 300ms ease backwards;
+  animation-direction: reverse;
+}
+
+.app-modal .app-modal-content-open {
+  position: fixed;
+  height: fit-content;
+  animation: move-up 300ms ease forwards;
+}
+.app-modal .app-modal-content-close {
+  display: none;
+  animation: move-up 300ms ease backwards;
+  animation-direction: reverse;
+}
+@keyframes move-up {
+  from {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
+
+
+
+
