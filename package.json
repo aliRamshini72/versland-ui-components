@@ -1,5 +1,6 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "description": "React components library for versland.io",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,6 +36,17 @@
   },
   "name": "versland-ui-components",
   "author": "Ali Ramshini",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliRamshini72/versland-ui-components/"
+  },
+  "keywords": [
+    "versland.io",
+    "react"
+  ],
   "module": "dist/versland-ui-components.esm.js",
   "size-limit": [
     {
