@@ -13,17 +13,20 @@ interface ColProps {
     children?: ReactNode
 }
 
-export default function Col(props: ColProps) {
+const Col: React.FC<ColProps> = (props: ColProps) => {
     const {span, lg, md, sm, xs, className, children} = props;
     return (
         <div className={classNames({[`col-${span}`]: span === 0 || span},
-            {[`lg:col-${lg}`]: lg === 0 || lg},
-            {[`md:col-${md}`]: md === 0 || md},
-            {[`sm:col-${sm}`]: sm === 0 || sm},
-            {[`xs:col-${xs}`]: xs === 0 || xs},
+            {[`col-2xl-${lg}`]: lg === 0 || lg},
+            {[`col-xl-${lg}`]: lg === 0 || lg},
+            {[`col-lg-${lg}`]: lg === 0 || lg},
+            {[`col-md-${md}`]: md === 0 || md},
+            {[`col-sm${sm}`]: sm === 0 || sm},
+            {[`col-xs${xs}`]: xs === 0 || xs},
             className
         )}>
             {children}
         </div>
     )
 }
+export default Col

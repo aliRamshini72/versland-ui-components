@@ -1,376 +1,1308 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer components {
-  .btn-accent {
-    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-accent text-primary fill-primary border border-solid border-accent rounded shadow-md transition-all  hover:bg-transparent   hover:text-accent hover:border-accent hover:border-solid hover:border hover:fill-accent  focus:outline-none  focus:ring-2 focus:ring-accent focus:ring-opacity-75;
-  }
 
-  .btn-sell {
-    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-red text-white fill-white border border-solid border-red rounded shadow-md transition-all  hover:bg-transparent   hover:text-red hover:border-red hover:border-solid hover:border hover:fill-red  focus:outline-none  focus:ring-2 focus:ring-red focus:ring-opacity-75;
-  }
-
-  .btn-buy {
-    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-green text-white fill-white border border-solid border-green rounded shadow-md transition-all  hover:bg-transparent   hover:text-green hover:border-green hover:border-solid hover:border hover:fill-green  focus:outline-none  focus:ring-2 focus:ring-green focus:ring-opacity-75;
-  }
-
-  .btn-slate {
-    @apply text-center inline-flex items-center justify-center py-2 px-4 bg-slate-300 text-black fill-black border border-solid border-slate-300 rounded shadow-md transition-all  hover:bg-transparent   hover:text-black hover:border-slate-300 hover:border-solid hover:border hover:fill-black  focus:outline-none  focus:ring-2 focus:ring-slate-300 focus:ring-opacity-75;
-  }
-
-  .btn-circle {
-    @apply rounded-full w-8 h-8 text-center inline-flex items-center justify-center transition-all shadow-md
-  }
-
-  .btn-accent-icon {
-    @apply ml-2 w-4 h-4
-  }
-
-  .btn-link {
-
-  }
-
-  .col-0 {
-    @apply basis-0/24 hidden
-  }
-
-  .col-1 {
-    @apply basis-1/24 block
-  }
-
-  .col-2 {
-    @apply basis-2/24 block
-  }
-
-  .col-3 {
-    @apply basis-3/24 block
-  }
-
-  .col-4 {
-    @apply basis-4/24 block
-  }
-
-  .col-5 {
-    @apply basis-5/24 block
-  }
-
-  .col-6 {
-    @apply basis-6/24 block
-  }
-
-  .col-7 {
-    @apply basis-7/24 block
-  }
-
-  .col-8 {
-    @apply basis-8/24 block
-  }
-
-  .col-9 {
-    @apply basis-9/24 block
-  }
-
-  .col-10 {
-    @apply basis-10/24 block
-  }
-
-  .col-11 {
-    @apply basis-11/24 block
-  }
-
-  .col-12 {
-    @apply basis-12/24 block
-  }
-
-  .col-13 {
-    @apply basis-13/24 block
-  }
-
-  .col-14 {
-    @apply basis-14/24 block
-  }
-
-  .col-15 {
-    @apply basis-15/24 block
-  }
-
-  .col-16 {
-    @apply basis-16/24 block
-  }
-
-  .col-17 {
-    @apply basis-17/24 block
-  }
-
-  .col-18 {
-    @apply basis-18/24 block
-  }
-
-  .col-19 {
-    @apply basis-19/24 block
-  }
-
-  .col-20 {
-    @apply basis-20/24 block
-  }
-
-  .col-21 {
-    @apply basis-21/24 block
-  }
-
-  .col-22 {
-    @apply basis-22/24 block
-  }
-
-  .col-23 {
-    @apply basis-23/24 block
-  }
-
-  .col-24 {
-    @apply basis-24/24 block
-  }
-
+.btn {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
+
+.btn-accent {
+    background: #FBC801;
+    border: solid thin #FBC801;
+    color: black;
+}
+
+.btn-accent:hover {
+    background: transparent;
+    border: solid thin #FBC801;
+    color: #FBC801;
+}
+
+.btn-accent-reverse {
+    background: transparent;
+    border: solid thin #FBC801;
+    color: #FBC801;
+}
+
+.btn-accent-reverse:hover {
+    background: #FBC801;
+    border: solid thin #FBC801;
+    color: black;
+}
+
+.btn-sell {
+    background: #ED374D;
+    border: solid thin #ED374D;
+    color: white;
+}
+
+.btn-sell:hover {
+    background: transparent;
+    border: solid thin #ED374D;
+    color: black;
+}
+
+.btn-buy {
+    background: #00984F;
+    border: solid thin #00984F;
+    color: white;
+}
+
+.btn-buy:hover {
+    background: transparent;
+    border: solid thin #00984F;
+    color: black;
+}
+
+.btn-text {
+    background: transparent;
+    border: solid thin transparent;
+    color: #FBC801;
+}
+
+.btn-text:hover {
+    background: #cbd5e1;
+    border: solid thin #cbd5e1;
+    color: #FBC801;
+}
+
+.btn-buy:hover {
+    background: transparent;
+    border: solid thin #00984F;
+    color: black;
+}
+
+.btn-small {
+    font-size: .75rem;
+    padding: 0.25rem .5rem;
+}
+
+.btn-large {
+    font-size: 1.25rem;
+    padding: 0.375rem 1.375rem;
+}
+
+
+.col-0 {
+    display: none;
+}
+
+.col-1 {
+    display: block;
+    flex-basis: 4.16666667%;
+}
+
+.col-2 {
+    display: block;
+    flex-basis: 8.33333333%;
+}
+
+.col-3 {
+    display: block;
+    flex-basis: 12.5%;
+}
+
+.col-4 {
+    display: block;
+    flex-basis: 16.6666667%;
+}
+
+.col-5 {
+    display: block;
+    flex-basis: 20.8333333%;
+}
+
+.col-6 {
+    display: block;
+    flex-basis: 25%;
+}
+
+.col-7 {
+    display: block;
+    flex-basis: 29.1666667%;
+}
+
+.col-8 {
+    display: block;
+    flex-basis: 33.3333333%;
+}
+
+.col-9 {
+    display: block;
+    flex-basis: 37.5%;
+}
+
+.col-10 {
+    display: block;
+    flex-basis: 41.6666667%;
+}
+
+.col-11 {
+    display: block;
+    flex-basis: 45.8333333%;
+}
+
+.col-12 {
+    display: block;
+    flex-basis: 50%;
+}
+
+.col-13 {
+    display: block;
+    flex-basis: 54.1666667%;
+}
+
+.col-14 {
+    display: block;
+    flex-basis: 58.3333333%;
+}
+
+.col-15 {
+    display: block;
+    flex-basis: 62.5%;
+}
+
+.col-16 {
+    display: block;
+    flex-basis: 66.6666667%;
+}
+
+.col-17 {
+    display: block;
+    flex-basis: 70.8333333%;
+}
+
+.col-18 {
+    display: block;
+    flex-basis: 75%;
+}
+
+.col-19 {
+    display: block;
+    flex-basis: 79.1666667%;
+}
+
+.col-20 {
+    display: block;
+    flex-basis: 83.3333333%;
+}
+
+.col-21 {
+    display: block;
+    flex-basis: 87.5%;
+}
+
+.col-22 {
+    display: block;
+    flex-basis: 91.6666667%;
+}
+
+.col-23 {
+    display: block;
+    flex-basis: 95.8333333%;
+}
+
+.col-24 {
+    display: block;
+    flex-basis: 100%;
+}
+
+@media (max-width: 576px) {
+    .col-xs-0 {
+        display: none;
+    }
+
+    .col-xs-1 {
+        display: block;
+        flex-basis: 4.16666667%;
+    }
+
+    .col-xs-2 {
+        display: block;
+        flex-basis: 8.33333333%;
+    }
+
+    .col-xs-3 {
+        display: block;
+        flex-basis: 12.5%;
+    }
+
+    .col-xs-4 {
+        display: block;
+        flex-basis: 16.6666667%;
+    }
+
+    .col-xs-5 {
+        display: block;
+        flex-basis: 20.8333333%;
+    }
+
+    .col-xs-6 {
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .col-xs-7 {
+        display: block;
+        flex-basis: 29.1666667%;
+    }
+
+    .col-xs-8 {
+        display: block;
+        flex-basis: 33.3333333%;
+    }
+
+    .col-xs-9 {
+        display: block;
+        flex-basis: 37.5%;
+    }
+
+    .col-xs-10 {
+        display: block;
+        flex-basis: 41.6666667%;
+    }
+
+    .col-xs-11 {
+        display: block;
+        flex-basis: 45.8333333%;
+    }
+
+    .col-xs-12 {
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .col-xs-13 {
+        display: block;
+        flex-basis: 54.1666667%;
+    }
+
+    .col-xs-14 {
+        display: block;
+        flex-basis: 58.3333333%;
+    }
+
+    .col-xs-15 {
+        display: block;
+        flex-basis: 62.5%;
+    }
+
+    .col-xs-16 {
+        display: block;
+        flex-basis: 66.6666667%;
+    }
+
+    .col-xs-17 {
+        display: block;
+        flex-basis: 70.8333333%;
+    }
+
+    .col-xs-18 {
+        display: block;
+        flex-basis: 75%;
+    }
+
+    .col-xs-19 {
+        display: block;
+        flex-basis: 79.1666667%;
+    }
+
+    .col-xs-20 {
+        display: block;
+        flex-basis: 83.3333333%;
+    }
+
+    .col-xs-21 {
+        display: block;
+        flex-basis: 87.5%;
+    }
+
+    .col-xs-22 {
+        display: block;
+        flex-basis: 91.6666667%;
+    }
+
+    .col-xs-23 {
+        display: block;
+        flex-basis: 95.8333333%;
+    }
+
+    .col-xs-24 {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-0 {
+        display: none;
+    }
+
+    .col-sm-1 {
+        display: block;
+        flex-basis: 4.16666667%;
+    }
+
+    .col-sm-2 {
+        display: block;
+        flex-basis: 8.33333333%;
+    }
+
+    .col-sm-3 {
+        display: block;
+        flex-basis: 12.5%;
+    }
+
+    .col-sm-4 {
+        display: block;
+        flex-basis: 16.6666667%;
+    }
+
+    .col-sm-5 {
+        display: block;
+        flex-basis: 20.8333333%;
+    }
+
+    .col-sm-6 {
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .col-sm-7 {
+        display: block;
+        flex-basis: 29.1666667%;
+    }
+
+    .col-sm-8 {
+        display: block;
+        flex-basis: 33.3333333%;
+    }
+
+    .col-sm-9 {
+        display: block;
+        flex-basis: 37.5%;
+    }
+
+    .col-sm-10 {
+        display: block;
+        flex-basis: 41.6666667%;
+    }
+
+    .col-sm-11 {
+        display: block;
+        flex-basis: 45.8333333%;
+    }
+
+    .col-sm-12 {
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .col-sm-13 {
+        display: block;
+        flex-basis: 54.1666667%;
+    }
+
+    .col-sm-14 {
+        display: block;
+        flex-basis: 58.3333333%;
+    }
+
+    .col-sm-15 {
+        display: block;
+        flex-basis: 62.5%;
+    }
+
+    .col-sm-16 {
+        display: block;
+        flex-basis: 66.6666667%;
+    }
+
+    .col-sm-17 {
+        display: block;
+        flex-basis: 70.8333333%;
+    }
+
+    .col-sm-18 {
+        display: block;
+        flex-basis: 75%;
+    }
+
+    .col-sm-19 {
+        display: block;
+        flex-basis: 79.1666667%;
+    }
+
+    .col-sm-20 {
+        display: block;
+        flex-basis: 83.3333333%;
+    }
+
+    .col-sm-21 {
+        display: block;
+        flex-basis: 87.5%;
+    }
+
+    .col-sm-22 {
+        display: block;
+        flex-basis: 91.6666667%;
+    }
+
+    .col-sm-23 {
+        display: block;
+        flex-basis: 95.8333333%;
+    }
+
+    .col-sm-24 {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-0 {
+        display: none;
+    }
+
+    .col-md-1 {
+        display: block;
+        flex-basis: 4.16666667%;
+    }
+
+    .col-md-2 {
+        display: block;
+        flex-basis: 8.33333333%;
+    }
+
+    .col-md-3 {
+        display: block;
+        flex-basis: 12.5%;
+    }
+
+    .col-md-4 {
+        display: block;
+        flex-basis: 16.6666667%;
+    }
+
+    .col-md-5 {
+        display: block;
+        flex-basis: 20.8333333%;
+    }
+
+    .col-md-6 {
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .col-md-7 {
+        display: block;
+        flex-basis: 29.1666667%;
+    }
+
+    .col-md-8 {
+        display: block;
+        flex-basis: 33.3333333%;
+    }
+
+    .col-md-9 {
+        display: block;
+        flex-basis: 37.5%;
+    }
+
+    .col-md-10 {
+        display: block;
+        flex-basis: 41.6666667%;
+    }
+
+    .col-md-11 {
+        display: block;
+        flex-basis: 45.8333333%;
+    }
+
+    .col-md-12 {
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .col-md-13 {
+        display: block;
+        flex-basis: 54.1666667%;
+    }
+
+    .col-md-14 {
+        display: block;
+        flex-basis: 58.3333333%;
+    }
+
+    .col-md-15 {
+        display: block;
+        flex-basis: 62.5%;
+    }
+
+    .col-md-16 {
+        display: block;
+        flex-basis: 66.6666667%;
+    }
+
+    .col-md-17 {
+        display: block;
+        flex-basis: 70.8333333%;
+    }
+
+    .col-md-18 {
+        display: block;
+        flex-basis: 75%;
+    }
+
+    .col-md-19 {
+        display: block;
+        flex-basis: 79.1666667%;
+    }
+
+    .col-md-20 {
+        display: block;
+        flex-basis: 83.3333333%;
+    }
+
+    .col-md-21 {
+        display: block;
+        flex-basis: 87.5%;
+    }
+
+    .col-md-22 {
+        display: block;
+        flex-basis: 91.6666667%;
+    }
+
+    .col-md-23 {
+        display: block;
+        flex-basis: 95.8333333%;
+    }
+
+    .col-md-24 {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-0 {
+        display: none;
+    }
+
+    .col-lg-1 {
+        display: block;
+        flex-basis: 4.16666667%;
+    }
+
+    .col-lg-2 {
+        display: block;
+        flex-basis: 8.33333333%;
+    }
+
+    .col-lg-3 {
+        display: block;
+        flex-basis: 12.5%;
+    }
+
+    .col-lg-4 {
+        display: block;
+        flex-basis: 16.6666667%;
+    }
+
+    .col-lg-5 {
+        display: block;
+        flex-basis: 20.8333333%;
+    }
+
+    .col-lg-6 {
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .col-lg-7 {
+        display: block;
+        flex-basis: 29.1666667%;
+    }
+
+    .col-lg-8 {
+        display: block;
+        flex-basis: 33.3333333%;
+    }
+
+    .col-lg-9 {
+        display: block;
+        flex-basis: 37.5%;
+    }
+
+    .col-lg-10 {
+        display: block;
+        flex-basis: 41.6666667%;
+    }
+
+    .col-lg-11 {
+        display: block;
+        flex-basis: 45.8333333%;
+    }
+
+    .col-lg-12 {
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .col-lg-13 {
+        display: block;
+        flex-basis: 54.1666667%;
+    }
+
+    .col-lg-14 {
+        display: block;
+        flex-basis: 58.3333333%;
+    }
+
+    .col-lg-15 {
+        display: block;
+        flex-basis: 62.5%;
+    }
+
+    .col-lg-16 {
+        display: block;
+        flex-basis: 66.6666667%;
+    }
+
+    .col-lg-17 {
+        display: block;
+        flex-basis: 70.8333333%;
+    }
+
+    .col-lg-18 {
+        display: block;
+        flex-basis: 75%;
+    }
+
+    .col-lg-19 {
+        display: block;
+        flex-basis: 79.1666667%;
+    }
+
+    .col-lg-20 {
+        display: block;
+        flex-basis: 83.3333333%;
+    }
+
+    .col-lg-21 {
+        display: block;
+        flex-basis: 87.5%;
+    }
+
+    .col-lg-22 {
+        display: block;
+        flex-basis: 91.6666667%;
+    }
+
+    .col-lg-23 {
+        display: block;
+        flex-basis: 95.8333333%;
+    }
+
+    .col-lg-24 {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-0 {
+        display: none;
+    }
+
+    .col-xl-1 {
+        display: block;
+        flex-basis: 4.16666667%;
+    }
+
+    .col-xl-2 {
+        display: block;
+        flex-basis: 8.33333333%;
+    }
+
+    .col-xl-3 {
+        display: block;
+        flex-basis: 12.5%;
+    }
+
+    .col-xl-4 {
+        display: block;
+        flex-basis: 16.6666667%;
+    }
+
+    .col-xl-5 {
+        display: block;
+        flex-basis: 20.8333333%;
+    }
+
+    .col-xl-6 {
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .col-xl-7 {
+        display: block;
+        flex-basis: 29.1666667%;
+    }
+
+    .col-xl-8 {
+        display: block;
+        flex-basis: 33.3333333%;
+    }
+
+    .col-xl-9 {
+        display: block;
+        flex-basis: 37.5%;
+    }
+
+    .col-xl-10 {
+        display: block;
+        flex-basis: 41.6666667%;
+    }
+
+    .col-xl-11 {
+        display: block;
+        flex-basis: 45.8333333%;
+    }
+
+    .col-xl-12 {
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .col-xl-13 {
+        display: block;
+        flex-basis: 54.1666667%;
+    }
+
+    .col-xl-14 {
+        display: block;
+        flex-basis: 58.3333333%;
+    }
+
+    .col-xl-15 {
+        display: block;
+        flex-basis: 62.5%;
+    }
+
+    .col-xl-16 {
+        display: block;
+        flex-basis: 66.6666667%;
+    }
+
+    .col-xl-17 {
+        display: block;
+        flex-basis: 70.8333333%;
+    }
+
+    .col-xl-18 {
+        display: block;
+        flex-basis: 75%;
+    }
+
+    .col-xl-19 {
+        display: block;
+        flex-basis: 79.1666667%;
+    }
+
+    .col-xl-20 {
+        display: block;
+        flex-basis: 83.3333333%;
+    }
+
+    .col-xl-21 {
+        display: block;
+        flex-basis: 87.5%;
+    }
+
+    .col-xl-22 {
+        display: block;
+        flex-basis: 91.6666667%;
+    }
+
+    .col-xl-23 {
+        display: block;
+        flex-basis: 95.8333333%;
+    }
+
+    .col-xl-24 {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .col-2xl-0 {
+        display: none;
+    }
+
+    .col-2xl-1 {
+        display: block;
+        flex-basis: 4.16666667%;
+    }
+
+    .col-2xl-2 {
+        display: block;
+        flex-basis: 8.33333333%;
+    }
+
+    .col-2xl-3 {
+        display: block;
+        flex-basis: 12.5%;
+    }
+
+    .col-2xl-4 {
+        display: block;
+        flex-basis: 16.6666667%;
+    }
+
+    .col-2xl-5 {
+        display: block;
+        flex-basis: 20.8333333%;
+    }
+
+    .col-2xl-6 {
+        display: block;
+        flex-basis: 25%;
+    }
+
+    .col-2xl-7 {
+        display: block;
+        flex-basis: 29.1666667%;
+    }
+
+    .col-2xl-8 {
+        display: block;
+        flex-basis: 33.3333333%;
+    }
+
+    .col-2xl-9 {
+        display: block;
+        flex-basis: 37.5%;
+    }
+
+    .col-2xl-10 {
+        display: block;
+        flex-basis: 41.6666667%;
+    }
+
+    .col-2xl-11 {
+        display: block;
+        flex-basis: 45.8333333%;
+    }
+
+    .col-2xl-12 {
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .col-2xl-13 {
+        display: block;
+        flex-basis: 54.1666667%;
+    }
+
+    .col-2xl-14 {
+        display: block;
+        flex-basis: 58.3333333%;
+    }
+
+    .col-2xl-15 {
+        display: block;
+        flex-basis: 62.5%;
+    }
+
+    .col-2xl-16 {
+        display: block;
+        flex-basis: 66.6666667%;
+    }
+
+    .col-2xl-17 {
+        display: block;
+        flex-basis: 70.8333333%;
+    }
+
+    .col-2xl-18 {
+        display: block;
+        flex-basis: 75%;
+    }
+
+    .col-2xl-19 {
+        display: block;
+        flex-basis: 79.1666667%;
+    }
+
+    .col-2xl-20 {
+        display: block;
+        flex-basis: 83.3333333%;
+    }
+
+    .col-2xl-21 {
+        display: block;
+        flex-basis: 87.5%;
+    }
+
+    .col-2xl-22 {
+        display: block;
+        flex-basis: 91.6666667%;
+    }
+
+    .col-2xl-23 {
+        display: block;
+        flex-basis: 95.8333333%;
+    }
+
+    .col-2xl-24 {
+        display: block;
+        flex-basis: 100%;
+    }
+}
+
 .bg-backdrop {
-  background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
+
+
+/*pagination*/
 .pagination-container {
-  display: flex;
-  list-style-type: none;
+    display: flex;
+    list-style-type: none;
 }
+
 .pagination-container .pagination-item {
-  padding: 0 12px;
-  height: 32px;
-  text-align: center;
-  margin: auto 4px;
-  color: rgba(0, 0, 0, 0.87);
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  letter-spacing: 0.01071em;
-  border-radius: 16px;
-  line-height: 1.43;
-  font-size: 13px;
-  min-width: 32px;
+    padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 16px;
+    line-height: 1.43;
+    font-size: 13px;
+    min-width: 32px;
 }
+
 .pagination-container .pagination-item.dots:hover {
-  background-color: transparent;
-  cursor: default;
+    background-color: transparent;
+    cursor: default;
 }
+
 .pagination-container .pagination-item:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-  cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
 }
+
 .pagination-container .pagination-item.selected {
-  background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(0, 0, 0, 0.08);
 }
+
 .pagination-container .pagination-item .arrow::before {
-  position: relative;
-  /* top: 3pt;
-   Uncomment this to lower the icons as requested in comments*/
-  content: '';
-  /* By using an em scale, the arrows will size with the font */
-  display: inline-block;
-  width: 0.4em;
-  height: 0.4em;
-  border-right: 0.12em solid rgba(0, 0, 0, 0.87);
-  border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+    position: relative;
+    /* top: 3pt;
+     Uncomment this to lower the icons as requested in comments*/
+    content: '';
+    /* By using an em scale, the arrows will size with the font */
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+    border-top: 0.12em solid rgba(0, 0, 0, 0.87);
 }
+
 .pagination-container .pagination-item .arrow.left {
-  transform: rotate(-135deg) translate(-50%);
+    transform: rotate(-135deg) translate(-50%);
 }
+
 .pagination-container .pagination-item .arrow.right {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
+
 .pagination-container .pagination-item.disabled {
-  pointer-events: none;
+    pointer-events: none;
 }
+
 .pagination-container .pagination-item.disabled .arrow::before {
-  border-right: 0.12em solid rgba(0, 0, 0, 0.43);
-  border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+    border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+    border-top: 0.12em solid rgba(0, 0, 0, 0.43);
 }
+
 .pagination-container .pagination-item.disabled:hover {
-  background-color: transparent;
-  cursor: default;
+    background-color: transparent;
+    cursor: default;
 }
+
+
+/*tooltip*/
 .tooltip {
-  width: fit-content;
-  position: relative;
+    width: fit-content;
+    position: relative;
 }
+
 .tooltip .hint-right {
-  display: none;
+    display: none;
 }
+
+.tooltip .hint-top {
+    display: none;
+}
+
+.tooltip .hint-left {
+    display: none;
+}
+
+.tooltip .hint-bottom {
+    display: none;
+}
+
 .tooltip .content {
-  width: fit-content;
+    width: fit-content;
 }
+
 .tooltip .content:hover .hint-right {
-  display: block;
-  position: absolute;
-  right: 100%;
-  top: 50%;
-  margin: auto 0;
-  width: fit-content;
-  max-width: 140px;
-}
-button svg {
-  vertical-align: sub;
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto 0;
+    width: fit-content;
+    max-width: 140px;
 }
 
-@keyframes loading-rotate {
-  0% {
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-  25% {
-    -moz-transform: rotateY(-360deg);
-    -ms-transform: rotateY(-360deg);
-    transform: rotateY(-360deg);
-  }
-  50% {
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  75% {
-    -moz-transform: rotateX(-360deg);
-    -ms-transform: rotateX(-360deg);
-    transform: rotateX(-360deg);
-  }
-  100% {
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
+.tooltip .content:hover .hint-left {
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto 0;
+    width: fit-content;
+    max-width: 140px;
 }
 
+.tooltip .content:hover .hint-top {
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin: auto 0;
+    width: fit-content;
+    max-width: 140px;
+}
 
+.tooltip .content:hover .hint-bottom {
+    display: block;
+    position: absolute;
+    right: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    margin: auto 0;
+    width: fit-content;
+    max-width: 140px;
+}
+
+/*radio*/
 .radio .radio-outer-circle {
-  width: 18px;
-  height: 18px;
-  min-width: 18px;
-  min-height: 18px;
-  border: 1px solid #001222;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 12px;
-  transition: all 0.1s linear;
-  background-color: white;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    border: 1px solid #001222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    transition: all 0.1s linear;
+    background-color: white;
 }
+
 .radio .radio-inner-circle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #fbc801;
-  transition: all 0.1s linear;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fbc801;
+    transition: all 0.1s linear;
 }
+
 .radio .unselected {
-  border: 1px solid #576f83;
+    border: 1px solid #576f83;
 }
+
 .radio .unselected-circle {
-  width: 0;
-  height: 0;
+    width: 0;
+    height: 0;
 }
 
+/*toast*/
 .component-message-wrap {
-  width: auto;
-  max-width: 85%;
-  display: inline-block;
-  position: fixed;
-  z-index: 60;
-  left: 50%;
-  top: -20px;
-  border-radius: 4px;
-  padding: 8px 32px;
-  background-color: #fff;
-  color: #000;
-  pointer-events: all;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
-  transform: translateX(-50%);
-  animation-name: message;
-}
-.component-message-wrap * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-@keyframes message {
-  0% {
+    width: auto;
+    max-width: 85%;
+    display: inline-block;
+    position: fixed;
+    z-index: 60;
+    left: 50%;
     top: -20px;
-    opacity: 1;
-  }
-  10% {
-    top: 40px;
-    opacity: 1;
-  }
-  80% {
-    top: 40px;
-    opacity: 1;
-  }
-  100% {
-    top: -20px;
-    opacity: 0;
-  }
-}
-.component-message-wrap .message-content {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-}
-.component-message-wrap .message-content i {
-  font-size: 14px;
-  display: block;
-  line-height: 1.1;
-  margin-right: 8px;
-}
-.component-message-wrap .message-content p {
-  flex: 1;
-  word-break: normal;
-  line-height: 1.1;
+    border-radius: 4px;
+    padding: 8px 32px;
+    background-color: #fff;
+    color: #000;
+    pointer-events: all;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    transform: translateX(-50%);
+    animation-name: message;
 }
 
+.component-message-wrap * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes message {
+    0% {
+        top: -20px;
+        opacity: 1;
+    }
+    10% {
+        top: 40px;
+        opacity: 1;
+    }
+    80% {
+        top: 40px;
+        opacity: 1;
+    }
+    100% {
+        top: -20px;
+        opacity: 0;
+    }
+}
+
+.component-message-wrap .message-content {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.component-message-wrap .message-content i {
+    font-size: 14px;
+    display: block;
+    line-height: 1.1;
+    margin-right: 8px;
+}
+
+.component-message-wrap .message-content p {
+    flex: 1;
+    word-break: normal;
+    line-height: 1.1;
+}
 
 @keyframes backdrop-fade {
-  from {
-    background: transparent;
-  }
-  to {
-    background-color: rgba(0, 0, 0, 0.25);
-  }
+    from {
+        background: transparent;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
 }
 
-.app-back-drop-open {
-  animation: backdrop-fade 300ms ease forwards;
+.back-drop-open {
+    animation: backdrop-fade 300ms ease forwards;
 }
 
-.app-back-drop-close {
-  animation: backdrop-fade 300ms ease backwards;
-  animation-direction: reverse;
+.back-drop-close {
+    animation: backdrop-fade 300ms ease backwards;
+    animation-direction: reverse;
 }
 
 .app-modal .app-modal-content-open {
-  position: fixed;
-  height: fit-content;
-  animation: move-up 300ms ease forwards;
+    position: fixed;
+    height: fit-content;
+    animation: move-up 300ms ease forwards;
 }
+
 .app-modal .app-modal-content-close {
-  display: none;
-  animation: move-up 300ms ease backwards;
-  animation-direction: reverse;
+    display: none;
+    animation: move-up 300ms ease backwards;
+    animation-direction: reverse;
 }
+
 @keyframes move-up {
-  from {
+    from {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    to {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@keyframes drawer-move-up-anim {
+    from {
+        right: 0;
+        left: 0;
+        bottom: -100%;
+    }
+    to {
+        right: 0;
+        left: 0;
+        bottom: 0%;
+    }
+}
+
+
+.drawer-back-drop-open {
+    position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  to {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: backdrop-fade 300ms ease forwards;
+}
+.drawer-back-drop-close {
+    display: none;
+    animation: backdrop-fade 300ms ease backwards;
+    animation-direction: reverse;
+}
+
+.drawer {
+    position: fixed;
+    z-index: 50;
+
+}
+
+.drawer-bottom {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+
+.drawer-bottom-open {
+    animation: drawer-move-up-anim 300ms ease forwards;
+}
+
+.drawer-bottom-close {
+    display: none;
+    animation: drawer-move-up-anim 300ms ease backwards;
+    animation-direction: reverse;
 }
 
 

@@ -23,7 +23,7 @@ interface RowProps {
 export default function Row(props: RowProps) {
     const {gap, children, className, align, justify} = props;
     return (
-        <div className={classNames('rtl flex flex-row flex-row', gap, className,
+        <div className={classNames('rtl flex flex-row flex-wrap', gap, className,
             {[`justify-${justify}`]: justify},
             {[`items-${align}`]: align},
         )}>

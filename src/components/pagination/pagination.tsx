@@ -1,9 +1,18 @@
 import {usePagination} from "../../hooks/usePagination";
-
 import classnames from 'classnames';
 import React from "react";
 
-const Pagination = (props: any) => {
+interface PaginationProps {
+    onChange(page: number): void,
+
+    total: number,
+    siblingCount: number,
+    current: number,
+    pageSize: number,
+    className?: string
+}
+
+const Pagination = (props: PaginationProps) => {
     const {
         onChange,
         total,
@@ -36,7 +45,7 @@ const Pagination = (props: any) => {
     let lastPage = paginationRange[paginationRange.length - 1];
     return (
         <ul
-            className={classnames('pagination-container justify-center items-center my-6 rtl', {[className]: className})}
+            className={classnames('pagination-container justify-center items-center my-6 rtl', className)}
         >
             {/* Left navigation arrow */}
             <li
@@ -48,7 +57,7 @@ const Pagination = (props: any) => {
             >
                 <div className="arrow right"/>
             </li>
-            {paginationRange?.map(pageNumber => {
+            {paginationRange?.map((pageNumber: string | number) => {
 
                 // If the pageItem is a DOT, render the DOTS unicode character
                 if (pageNumber === "DOTS") {
@@ -61,7 +70,7 @@ const Pagination = (props: any) => {
                         className={classnames('pagination-item', {
                             selected: pageNumber === current
                         })}
-                        onClick={() => onChange(pageNumber)}
+                        onClick={() => onChange(Number(pageNumber))}
                     >
                         {pageNumber}
                     </li>
